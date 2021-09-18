@@ -1,0 +1,31 @@
+CREATE DATABASE ComparaPreco;
+
+
+CREATE TABLE Cliente(
+CPF       Varchar(12)     Primary Key,
+Nome      Varchar(20)     Not null,
+DataNasc  Date            Not null,
+Telefone  Varchar(11)     Not null,
+Endereço  Varchar(30)     Not null,
+Email     Varchar(30)     Not null
+);
+
+
+CREATE TABLE Produto(
+Cod_Produto Varchar(13) Primary Key,
+Nome        Varchar(20) Not null,
+Valor       Float       Not null,
+Qtd_Estoque Int         Not null,
+Tamanho     Float       Not null,
+Categoria   Varchar(16) Not null,
+Avaliacao   Int         Not null
+);
+
+
+CREATE TABLE Loja(
+Id_Loja   Varchar(13) primary Key,
+Nome      char        Not null,
+Email     Varchar(30) Not null,
+Endereço  Varchar(30) Not null,
+Telefone  Varchar(11) Not null
+);
