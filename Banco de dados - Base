@@ -27,5 +27,8 @@ Id_Loja   Varchar(13) primary Key,
 Nome      char        Not null,
 Email     Varchar(30) Not null,
 Endereço  Varchar(30) Not null,
-Telefone  Varchar(11) Not null
+Telefone  Varchar(11) Not null,
+Cod_prod  Varchar(13) Not null,
+foreign key (Cod_prod) references Produto(Cod_Produto)
 );
+
