@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Compara Preços</title>
+        <link rel="stylesheet" type="text/css" href="reset.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="login.css" media="screen">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html"><img id="logo" src="img/logo.png" alt="Logo"></a>
+            <h1>Compara Preços</h1>
+        </header>
+        <section>
+            <h2>Efetuar cadastro de produtos</h2><br>
+            <form method="POST" action="podcad.php">
+                <br><label for="usuario">Digite o nome do produto:</label><br>
+                <input class="campo" type="text" placeholder="Nome" name="nomep"><br>
+                <br><label for="senha">Digite a marca:</label><br>
+                <input class="campo" type="text" placeholder="Marca" name="marcap"><br>
+                <br><label for="usuario">Digite o valor:</label><br>
+                <input class="campo" type="text" placeholder="Valor" name="valorp"><br>
+                <br><label for="senha">Digite a quantidade:</label><br>
+                <input class="campo" type="text" placeholder="Quantidade" name="quantp"><br>
+                <br><label for="usuario">Digite o código do produto:</label><br>
+                <input class="campo" type="text" placeholder="Código" name="codp"><br>
+                <br><label for="senha">Digite chave de acesso da loja:</label><br>
+                <input class="campo" type="text" placeholder="Chave de acesso" name="chave"><br>
+                <input id="botao" type="submit" value="Cadastrar">
+            </form>
+            
+        </section>
+    </body>
+</html>

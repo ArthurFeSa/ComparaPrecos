@@ -1,0 +1,153 @@
+
+@media all and (max-width: 1023px) {
+    h1{
+        text-align: center;
+        margin-top: 0.2em;
+        font-size: 10vw;
+    }
+
+    #logo{
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0.4em;
+    }
+
+    #usuario{
+        display: none;
+    }
+
+    #login{
+        display: none;
+    }
+
+    #menu{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        margin-top: 0.4em;
+    }
+
+    form{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+        width: 50em;
+    }
+
+    #centro{
+        margin-left: auto;
+        margin-right: auto;
+        width: 47em;
+    }
+    #pesquisa{
+        width: 50em;
+        height: 4em;
+        border-color: black;
+    }
+
+    #botao{
+        height: 5em;
+        width: 5em;
+        margin-left: 0.2em;
+    }
+
+    #botao img{
+        max-width: 2em;
+        max-height: 2em;
+    }
+
+    #comparacao{
+        width: 50em;
+        height: 80em;
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(231, 224, 224);
+    }
+}
+
+@media all and (min-width: 1024px) {
+    h1{
+        text-align: center;
+        margin-top: 1em;
+        font-size: 4vw;
+    }
+
+    #logo{
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: 1em;
+        left: 1em;
+    }
+
+    #login{
+        width: 120px;
+        height: 12em;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
+
+    #login a{
+       display: block;
+       text-align: center;
+       text-decoration: none;
+       margin-top: 0.6em;
+       font-size: 1.6vw;
+    }
+
+    #usuario{
+        width: 120px;
+        height: 120px;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    form{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+        width: 38em;
+        height: 4em;
+    }
+
+    #centro{
+        margin-left: auto;
+        margin-right: auto;
+        width: 32.5em;
+    }
+
+    #pesquisa{
+        width: 34em;
+        height: 2.8em;
+        text-size-adjust: auto;
+    }
+
+    #botao{
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 2.8em;
+        width: 4em;
+    }
+
+    #botao img{
+        max-width: 1.5em;
+        max-height: 1.5em;
+    }
+
+    #comparacao{
+        width: 56em;
+        height: 56em;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(231, 224, 224);
+    }
+}
