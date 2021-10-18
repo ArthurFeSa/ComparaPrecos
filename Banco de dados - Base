@@ -1,34 +1,35 @@
-CREATE DATABASE ComparaPreco;
+create database comparaPreços;
+use comparaPreços;
 
-
-CREATE TABLE Cliente(
-CPF       Varchar(12)     Primary Key,
-Nome      Varchar(20)     Not null,
-DataNasc  Date            Not null,
-Telefone  Varchar(11)     Not null,
-Endereço  Varchar(30)     Not null,
-Email     Varchar(30)     Not null
+create table loja_parceiros (
+id_loja          int     primary key,
+nome_loja        varchar (30) not null,
+telefone_loja    char   (12) not null,
+email_loja       varchar(100) not null,
+cidade_loja      varchar (100) not null
 );
 
+create table produto (
+codProduto       int primary key,
+nome_produto     varchar(30) not null,
+valorProduto     decimal not null,
+qnt_estoque      int,
+marca_prod       varchar(30) not null,
+fk_id_loja       int  not null,
+foreign key(fk_id_loja) REFERENCES loja_parceiros (id_loja)
 
-CREATE TABLE Produto(
-Cod_Produto Varchar(13) Primary Key,
-Nome        Varchar(20) Not null,
-Valor       Float       Not null,
-Qtd_Estoque Int         Not null,
-Tamanho     Float       Not null,
-Categoria   Varchar(16) Not null,
-Avaliacao   Int         Not null
+);
+create table Cliente (
+Cpf_cliente      int primary key,
+nome_cliente     varchar(40) not null,
+data_nasc        date not null,
+email_cliente    varchar(100) not null,
+telefone_cliente char(12) not null,
+cidade_cliente   varchar(100)  not null
 );
 
-
-CREATE TABLE Loja(
-Id_Loja   Varchar(13) primary Key,
-Nome      char        Not null,
-Email     Varchar(30) Not null,
-Endereço  Varchar(30) Not null,
-Telefone  Varchar(11) Not null,
-Cod_prod  Varchar(13) Not null,
-foreign key (Cod_prod) references Produto(Cod_Produto)
+create table Login (
+ID               int primary key AUTO_INCREMENT,
+login            varchar(100) not null,
+senha            varchar(30) not null
 );
-
